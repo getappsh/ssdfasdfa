@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ssdfasdfa
+  labels:
+    name: ssdfasdfa
+    environment: development
