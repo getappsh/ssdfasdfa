@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ssdfasdfa
+  namespace: ssdfasdfa
+  labels:
+    app: ssdfasdfa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ssdfasdfa
+  template:
+    metadata:
+      labels:
+        app: ssdfasdfa
+    spec:
+      containers:
+      - name: ssdfasdfa
+        image: ssdfasdfa:latest
+        ports:
+        - containerPort: 3000
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
